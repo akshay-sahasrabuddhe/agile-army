@@ -1,0 +1,55 @@
+/* 
+Color codes:- 
+
+chocolate :- #553311
+light chocolate:- #cc7733
+orange:- #ff9933
+cream:- #ffdd77
+light gray::- #eeeedd
+
+ */
+
+.chocolate-bg{
+    background-color: #553311;
+}
+
+.navigation-section .nav-item .nav-link{
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.website-logo{
+    height: 50px;
+    width: 50px;
+}
+
+
+.navbar .nav-item:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.navbar .nav-item:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    }
+    
+    .navbar{  
+        animation: 0.50s ease-out slideInFromLeft;
+      } 
