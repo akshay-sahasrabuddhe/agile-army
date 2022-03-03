@@ -49,6 +49,22 @@ light gray::- #eeeedd
   }
 }
 
+<<<<<<< HEAD
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    }
+    
+    .navbar{  
+        animation: 0.50s ease-out slideInFromLeft;
+      } 
+      .footer-color{
+          color:#553311      }
+=======
 .navbar {
   animation: 0.5s ease-out slideInFromLeft;
 }
@@ -130,3 +146,4 @@ light gray::- #eeeedd
   margin-bottom: 1rem;
   margin-left: auto;
 }
+>>>>>>> 516d09751e18e23534239b17bf501ec3018ddc07
