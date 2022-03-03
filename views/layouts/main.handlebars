@@ -3,8 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>{{title}}</title>
-    <link rel="stylesheet" href="/public/site.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/site.css">
 
 </head>
 <body>
@@ -59,7 +63,49 @@
     </section>
 
     {{!-- End of Navigation --}}
-
+ <!-- Quote Image -->
+ <section>
+    <div class="carousel-bg">
+    <div>
+      <img src="https://i.imgur.com/gZ5HY0U.png" class="img-responsive quote-image">
+    </div>
+    <!-- Carousel Start below -->
+    <div id="carousel1" class="carousel slide testimonial-style" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators carousel-indicators1">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="carousel-caption testimonial-caption-style">
+            <p>Review 1</p>
+            <p class="testimonial-authors">Person 1</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption testimonial-caption-style">
+            <p>Review 2</p>
+            <p class="testimonial-authors">Person 2</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption testimonial-caption-style">
+            <p>Reviewcxvvdvdvd 3</p>
+            <p class="testimonial-authors">Person 3</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Controls -->
+  
+      <a class="left carousel-control" href="#carousel1" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+      <a class="right carousel-control" href="#carousel1" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+    </div>
+</div>
+</section>
    {{{body}}}
 
    <div class="container">
