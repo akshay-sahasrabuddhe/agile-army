@@ -53,3 +53,5 @@ light gray::- #eeeedd
     .navbar{  
         animation: 0.50s ease-out slideInFromLeft;
       } 
+      .footer-color{
+          color:#553311      }
