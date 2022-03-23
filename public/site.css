@@ -9,14 +9,36 @@ light gray::- #eeeedd
 
  */
 
+*{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.section{
+  margin-top: 75px;
+}
+
+.main-heading{
+  font-size: 60px;
+}
+
+.subheading{
+  font-size: 30px;
+}
+
+#home-tab,#profile-tab{
+  width: 300px;
+}
+
 .chocolate-bg {
   background-color: #553311;
 }
 
-.navigation-section .nav-item .nav-link {
+.navigation-section .navbar-expand-lg .navbar-nav .nav-item .nav-link {
   color: whitesmoke;
   font-weight: 700;
   font-size: 18px;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .nav-link:hover{
@@ -126,18 +148,18 @@ light gray::- #eeeedd
 /*  */
 
 
-h1 {
+aside {
   margin: 0.5vh 0;
   font-size: 2em;
   padding: 3vh 0;
-  background-color: #333333;
+  background-color: #000000;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
   text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;  
 }
-h1#title.imgTitle{
+aside#title.imgTitle{
 text-shadow: 0 0 25px rgba(20, 139, 255, 0.8), 0 0 15px rgba(30, 144, 255, 0.54);
   background-color: rgba(77, 134, 189, 0.8);
 }

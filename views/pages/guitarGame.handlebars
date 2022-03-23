@@ -1,24 +1,20 @@
 {{!--  --}}
 <section class="section guitar-game-section pt-5 mt-5">
     <div class="container">
-        <h1 class="main-heading text-center">The Guitar Game</h1>
-        <h2 class="subheading text-center"><i><u>Keep Calm and Play Guitar</u></i></h2>
+        <h1 class="main-heading text-center p-3">The Guitar Game</h1>
+        <h2 class="subheading text-center p-3 mb-5"><i><u>Keep Calm and Play Guitar</u></i></h2>
         <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Original Guitar</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Electric Guitar</button>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <h2 class="subheading text-center">Be a Guitar Hero !!!</h2>
                 <div class="guitar-header text-center">
-		            <h1 id="title">Agile Army's Guitar</h1>
+		            <aside id="title">Agile Army's Guitar</aside>
 	            </div>
                 <section id="guitarBody">
                     <button onmouseover="pickString(this.id)" onclick="clickString(this.id)" class="string" id="s6"></button>
@@ -35,7 +31,7 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <h2 class="subheading text-center">Let's Rock !!!</h2>
+                <h2 class="subheading text-center p-5">Let's Rock !!!</h2>
             </div>
         </div>
     </div>
