@@ -17,7 +17,22 @@
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <h2 class="subheading text-center">Be a Guitar Hero !!!</h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet possimus, quos magnam aliquam id quia quas, aspernatur non corrupti sequi maiores delectus assumenda molestias impedit harum ab! Dolores, voluptas totam.
+                <div class="guitar-header text-center">
+		            <h1 id="title">Agile Army's Guitar</h1>
+	            </div>
+                <section id="guitarBody">
+                    <button onmouseover="pickString(this.id)" onclick="clickString(this.id)" class="string" id="s6"></button>
+                    <button onmouseover="pickString(this.id)" onclick="clickString(this.id)" class="string" id="s5"></button>
+                    <button onmouseover="pickString(this.id)" onclick="clickString(this.id)" class="string" id="s4"></button>
+                    <button onmouseover="pickString(this.id)" onclick="clickString(this.id)" class="string" id="s3"></button>
+                    <button onmouseover="pickString(this.id)" onclick="clickString(this.id)" class="string" id="s2"></button>
+                    <button onmouseover="pickString(this.id)" onclick="clickString(this.id)" class="string" id="s1"></button>
+                </section>
+                <div class="guitar-footer">
+                    <button onclick="stopStrings()" class="inactive" id="btnStop">STOP</button>
+                    <button onclick="usePick()" class="inactive" id="btnPick">PICK</button>
+                    <button onclick="holdSound()" class="inactive" id="btnHold">HOLD</button>
+                </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <h2 class="subheading text-center">Let's Rock !!!</h2>
