@@ -4,16 +4,6 @@
   "description": "Agile project",
   "main": "app.js",
   "dependencies": {
-    "exphbs": "^1.2.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
-  "author": "Akshay,Roshan,Sarthak,Shrikar,Shashwat",
-  "license": "ISC",
-  "dependencies": {
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
@@ -22,5 +12,12 @@
     "handlebars": "^4.7.7",
     "mongodb": "^4.1.3",
     "uuid": "^3.3.2"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Akshay,Roshan,Sarthak,Shrikar,Shashwat",
+  "license": "ISC"
 }

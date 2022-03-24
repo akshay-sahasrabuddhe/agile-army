@@ -1,8 +1,8 @@
-nav {
-  background-color: #221C44;
+nav.electricc {
+  background-color: #221c44;
   height: 52px;
   font-family: "Roboto", sans-serif;
-  color: #969DA2;
+  color: #969da2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,36 +12,37 @@ nav {
   position: relative;
   z-index: 2;
 }
-nav .rewind {
+nav.electricc .rewind {
   margin-left: 28px;
   height: 16px;
   cursor: pointer;
 }
-nav .play {
+nav.electricc .play {
   margin-left: 24px;
   height: 24px;
   cursor: pointer;
 }
-nav .play-icon:hover path, nav .play-icon:hover rect,
-nav .rewind-icon:hover path,
-nav .rewind-icon:hover rect,
-nav .pause-icon:hover path,
-nav .pause-icon:hover rect {
+nav.electricc .play-icon:hover path,
+nav.electricc .play-icon:hover rect,
+nav.electricc .rewind-icon:hover path,
+nav.electricc .rewind-icon:hover rect,
+nav.electricc .pause-icon:hover path,
+nav.electricc .pause-icon:hover rect {
   fill: #566574;
 }
-nav .pause-icon {
+nav.electricc .pause-icon {
   display: none;
 }
-nav .controls {
+nav.electricc .controls {
   display: flex;
   align-items: center;
 }
-nav .social a {
+nav.electricc .social a {
   font-size: 24px;
-  color: #A8B5C2;
+  color: #a8b5c2;
   margin-left: 18px;
 }
-nav .social a:hover {
+nav.electricc .social a:hover {
   color: #566574;
 }
 
@@ -56,7 +57,7 @@ nav .social a:hover {
   transition: width 0.3s linear;
 }
 
-.notes {
+.notess {
   display: flex;
   height: 0;
   opacity: 0;
@@ -66,15 +67,15 @@ nav .social a:hover {
   z-index: 2;
   overflow: hidden;
 }
-.notes .note {
+.notess .note {
   height: 132px;
 }
-.notes .note > div {
+.notess .note > div {
   height: 100%;
   width: 32px;
   border-radius: 16px;
-  background-color: #D8D8D8;
-  color: #541F5D;
+  background-color: #d8d8d8;
+  color: #541f5d;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -84,46 +85,46 @@ nav .social a:hover {
   padding: 5px 0;
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.16);
 }
-.notes .note:hover div {
-  background-color: #FF6545;
+.notess .note:hover div {
+  background-color: #ff6545;
   color: #fff;
 }
-.notes .note.key {
+.notess .note.key {
   height: 172px;
 }
-.notes .note.key > div {
-  background-color: #ECDCCA;
+.notess .note.key > div {
+  background-color: #ecdcca;
 }
-.notes .note.key:hover > div {
-  background-color: #FF6545;
+.notess .note.key:hover > div {
+  background-color: #ff6545;
   color: #fff;
 }
-.notes .note:not(:first-child) > div {
+.notess .note:not(:first-child) > div {
   margin-left: 8px;
 }
-.notes .note:not(:last-child) > div {
+.notess .note:not(:last-child) > div {
   margin-right: 8px;
 }
-.notes .note span {
+.notess .note span {
   font-size: 0.7em;
 }
 
-.guitar {
+.guitarr {
   width: 96%;
   min-width: 772px;
   /*position: fixed;*/
   bottom: 0;
   right: 0;
 }
-.guitar.visible {
+.guitarr.visible {
   transition: opacity 0.5s ease;
 }
-.guitar img {
+.guitarr img {
   width: 100%;
   display: block;
   pointer-events: none;
 }
-.guitar .circle {
+.guitarr .circlee {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/switch.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -137,16 +138,17 @@ nav .social a:hover {
   top: 88.5%;
   cursor: pointer;
 }
-.guitar .circle.rock {
+.guitarr .circlee.rock {
   background-position: 0 100%;
 }
-.guitar .circle.rock:before {
-  color: #FFF;
+.guitarr .circlee.rock:before {
+  color: #fff;
 }
-.guitar .circle.rock:after {
-  color: #C17CA4;
+.guitarr .circlee.rock:after {
+  color: #c17ca4;
 }
-.guitar .circle:before, .guitar .circle:after {
+.guitarr .circlee:before,
+.guitarr .circlee:after {
   font-weight: 700;
   font-size: 12px;
   line-height: 13px;
@@ -155,35 +157,24 @@ nav .social a:hover {
   position: relative;
   transition: color 0.3s ease;
 }
-.guitar .circle:before {
-  content: "ROCK";
-  top: -14px;
-  color: #C17CA4;
-}
-.guitar .circle:after {
-  content: "BLUES";
-  top: 100%;
-  color: #FFF;
-  position: absolute;
-  width: 100%;
-  margin-top: 2px;
-}
 
-.custom-container{
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/bluesman_background.svg), linear-gradient(-180deg, #242150 5%, #572250 91%);
+.custom-container {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/bluesman_background.svg),
+    linear-gradient(-180deg, #242150 5%, #572250 91%);
   background-size: cover;
   background-position: center;
   margin: 0;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: "Roboto", sans-serif;
+  height: 100%;
+  min-width: 726px;
 }
 .custom-container * {
   user-select: none;
 }
 
-
-.custom-container{
+.custom-container {
   height: 100%;
   min-width: 726px;
 }
