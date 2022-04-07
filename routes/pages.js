@@ -11,4 +11,8 @@ router.get('/guitargame', async (req, res) => {
     res.render('pages/guitarGame');
 });
 
+router.get('/paintgame', async (req, res) => {
+    res.render('pages/paintGame');
+});
+
 module.exports = router;
