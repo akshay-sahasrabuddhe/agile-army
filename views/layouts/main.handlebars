@@ -1,57 +1,92 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>{{title}}</title>
     <link rel="stylesheet" href="/public/site.css" />
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script:wght@700&family=Lobster&family=Metal+Mania&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/public/electric.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/>
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script><link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script:wght@700&family=Lobster&family=Metal+Mania&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/public/electric.css" />
+    <link rel="stylesheet" type="text/css" href="/public/paint.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script><link rel="preconnect" href="https://fonts.googleapis.com" />
 
-  {{!-- fonts --}}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
-    {{!-- end of fonts --}}
-    
-</head>
-<body>
+    {{! fonts }}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    {{! end of fonts }}
 
-    {{!-- Start of Navigation --}}
+  </head>
+  <body>
 
-    <section class="section navigation-section ">
+    {{! Start of Navigation }}
+
+    <section class="section navigation-section">
       <nav class="navbar navbar-expand-lg navbar-dark chocolate-bg fixed-top">
-          <div class="container">
-              <a class="navbar-brand" href="/">
-                  <img class="website-logo" src="./public/images/logo.png" alt="">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/">Home</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="/guitargame">Guitar Game</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="/paintgame">Paint Game</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="#">Game 3</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="#">Game 4</a>
-                  </li>
-                  {{!-- <li class="nav-item dropdown">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img class="website-logo" src="./public/images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/guitargame">Guitar Game</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paintgame">Paint Game</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Game 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Game 4</a>
+              </li>
+              {{! <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Dropdown
                       </a>
@@ -61,271 +96,187 @@
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
                       </ul>
-                  </li> --}}
-              </ul>
-              <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-warning" type="submit">Search</button>
-              </form>
-              </div>
+                  </li> }}
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-warning"
+                type="submit"
+              >Search</button>
+            </form>
           </div>
+        </div>
       </nav>
     </section>
 
-    {{!-- End of Navigation --}}
+    {{! End of Navigation }}
 
- <!-- Quote Image -->
- 
-   {{{body}}}
+    <!-- Quote Image -->
 
-<footer class="text-center text-lg-start bg-light text-muted">
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <!-- Left -->
+    {{{body}}}
 
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
 
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
-          </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
+    <footer class="text-center text-lg-start bg-light text-muted" id="footer-section">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
         </div>
-        <!-- Grid column -->
+        <!-- Left -->
 
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
-          </p>
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
-        <!-- Grid column -->
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
 
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
-          </h6>
-          <p>
-            <a href="/guitargame" class="text-reset">Guitar Game</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Company name
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Contact
-          </h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="/guitargame" class="text-reset">Guitar Game</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Contact
+              </h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
         </div>
-        <!-- Grid column -->
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05);"
+      >
+        © 2021 Copyright:
+        <a
+          class="text-reset fw-bold"
+          href="https://mdbootstrap.com/"
+        >MDBootstrap.com</a>
       </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
+      <!-- Copyright -->
+    </footer> 
+    <!-- Footer -->
 
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"
+    ></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    
 
-  <script >
-    $(document).ready(function(){
-        $('.slider-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }]
-        });
-    });
-  </script>
+    <script>
+      $(document).ready(function(){ $('.slider-nav').slick({ slidesToShow: 3,
+      slidesToScroll: 1, autoplay: false, autoplaySpeed: 2000, responsive: [ {
+      breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1,
+      infinite: true, dots: true } }, { breakpoint: 600, settings: {
+      slidesToShow: 2, slidesToScroll: 1 } }, { breakpoint: 480, settings: {
+      slidesToShow: 1, slidesToScroll: 1 } }] }); });
+    </script>
 
-  <script>
-    /* VARIABLES */
-/* sounds */
-var s1 = new Audio('https://josetxu.com/html5/guitar-tuner/audio/s1.mp3');
-var s2 = new Audio('https://josetxu.com/html5/guitar-tuner/audio/s2.mp3');
-var s3 = new Audio('https://josetxu.com/html5/guitar-tuner/audio/s3.mp3');
-var s4 = new Audio('https://josetxu.com/html5/guitar-tuner/audio/s4.mp3');
-var s5 = new Audio('https://josetxu.com/html5/guitar-tuner/audio/s5.mp3');
-var s6 = new Audio('https://josetxu.com/html5/guitar-tuner/audio/s6.mp3');
-
-/* FUNCTIONS */
-/* short getElementById */
-function elem(id){
-	var element = document.getElementById(id);
-	return element;
-}
-/* tuner functions */
-function pickString(thisString){
-	if(pick == true) clickString(thisString);
-}
-function clickString(thisString) {
-	elem('title').className='imgTitle';
-	elem(thisString).className = "string";
-	window[thisString].currentTime = 0;
-	window[thisString].play();
-	var thisNote = thisString+"Note";
-	elem(thisString).className = "string playingSound";
-	elem(thisNote).className = "lightOn";
-	setTimeout(function(){ 		
-		if(window[thisString].loop != true){
-			elem(thisString).className = "string";
-			elem(thisNote).className = "lightOff";
-			if(document.querySelectorAll('.playingSound').length==0){
-				elem('title').className='';
-			}
-		}
-	}, 4500);
-}
-function holdSound(){
-	if(s1.loop != true){
-		s1.loop = s2.loop = s3.loop = s4.loop = s5.loop = s6.loop = true;
-		elem('btnHold').className = "active";
-	} else {
-		s1.loop = s2.loop = s3.loop = s4.loop = s5.loop = s6.loop = false;
-		elem('btnHold').className = "inactive";
-		s1.pause(); s2.pause(); s3.pause(); s4.pause(); s5.pause(); s6.pause();	
-		stopStrings();
-	}
-}
-function stopStrings(){
-	elem('title').className='';
-	s1.pause(); s2.pause(); s3.pause(); s4.pause(); s5.pause(); s6.pause();
-	var auxString = document.querySelectorAll('.playingSound');	
-	for (var x in auxString) {
-		if(auxString[x]!==undefined){
-			auxString[x].className = "string";
-		}
-	}
-	var auxNote = document.querySelectorAll(".lightOn");
-	for (x in auxNote) {
-		if(auxNote[x]!==undefined){
-			auxNote[x].className = "lightOff";
-		}
-	}
-}
-function usePick(){
-	var x = elem('btnPick').className;
-	if(x == 'inactive'){
-		elem('btnPick').className = 'active';
-		pick = true;
-		elem("guitarBody").className = 'pickActive';	
-	} else {
-		elem('btnPick').className = 'inactive';
-		pick = false;
-		elem("guitarBody").className = '';	
-	}
-}
-/* ON LOAD */
-(function() {
-	setTimeout(function(){ 		
-		clickString('s3');
-	}, 500);
-})();
-  </script>
-</body>
+  </body>
 </html>
