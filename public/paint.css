@@ -16,6 +16,7 @@
   background: #0a141e;
   padding: 15px;
   color: #eee;
+  overflow: auto;
 }
 #sidebar .heading h2 {
   margin-top: -10px;
@@ -96,4 +97,8 @@ a#saveCanvas {
 
 canvas {
   float: right;
+}
+
+.colorpick-eyedropper-input-trigger{
+  display: none;
 }

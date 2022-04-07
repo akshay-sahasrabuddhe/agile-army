@@ -99,3 +99,7 @@ function mouseDragged() {
     rect(mouseX, mouseY, drawSize / 1.2, drawSize / 1.2);
   }
 }
+
+window.onload = (event) => {
+document.getElementById('footer-section').style.display = 'none';
+};
