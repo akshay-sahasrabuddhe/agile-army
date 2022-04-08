@@ -8,7 +8,7 @@ function _(id) {
   return document.getElementById(id);
 }
 function setup() {
-  paint = createCanvas(innerWidth - 250, innerHeight);
+  paint = createCanvas(innerWidth - 300, innerHeight);
 
   brushColor = "#151718";
   bgColor = "#c8c8c8";
@@ -79,7 +79,7 @@ function setup() {
   };
 
   window.onresize = function () {
-    document.getElementsByTagName("canvas")[0].style.width = innerWidth - 250;
+    document.getElementsByTagName("canvas")[0].style.width = innerWidth - 300;
     document.getElementsByTagName("canvas")[0].style.height = innerHeight;
   };
 }
