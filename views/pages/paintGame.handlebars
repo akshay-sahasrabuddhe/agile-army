@@ -1,47 +1,60 @@
-<section>
-  {{! Put your HTML Code here }}
-  <div id="paint">
-    <div id="sidebar">
-      <div class="row heading">
-        <h2>Paint</h2>
-      </div>
-      <div class="row">
-        <p>Brush Color</p>
-        <input type="color" id="brushColor" />
-      </div>
-      <div class="row">
-        <p>Background Color</p>
-        <input type="color" id="bgColor" />
-      </div>
-      <div class="row">
-        <p>Size</p>
-        <input
-          type="range"
-          id="sizeRange"
-          min="2"
-          max="20"
-          value="5"
-          steps="2"
-        />
-      </div>
-      <div class="row">
-        <p>Pen Style</p>
-        <div><span>Pencil</span><input
-            type="checkbox"
-            id="pencil"
-            checked="true"
-          /></div>
-        <div><span>Brush</span><input type="checkbox" id="brush" /></div>
-        <div><span>Square</span><input type="checkbox" id="square" /></div>
-        <div><span>Eraser</span><input type="checkbox" id="eraser" /></div>
-      </div>
-      <div class="row">
-        <p><a href="#" id="saveCanvas">Save & Clear</a></p>
-        <p><a href="#" id="clearCanvas">Clear</a></p>
-      </div>
-    </div>
-  </div>
+<section class="section container2">
 
+<div class="container  ">
+<br>
+<br>
+<div class= "text-center slide-top"> <h1 > <span class="main-heading text-center paintfont1"     style='color: #212529'> Paint Game  <span class= "fa fa-paint-brush text-center" style='color: #212529; font-size:60px' ></span></h1> </div>
+ <br>
+ <div>
+        <h3 class="slide-top head4  text-center">Mental Health benefits of Painting :-</h3>
+        <h3 class="slide-top head4 text-center">Painting promotes Stress Relief, Expands Creative Growth, Enhances Problem-Solving and Motor Skills, & Stimulates an Optimistic Attitude, Painting helps build strong mental health at every age and it is never too late to start a new hobby. </h3>
+       <br>
+
+         <h3 class="slide-top head4 text-center"> PICK UP YOUR BRUSHES & Create your own MASTERPIECE!!!! </h3>
+</div> 
+</div> 
+
+
+<br>
+<br>
+							
 </section>
+<div id="sidebar" class="slide-right">
 
-<script src="../../public/paintgame.js"></script>
+
+	<div class="row heading">
+		<h2>Paint</h2>
+	</div>
+	<div class="row">
+		<p>Brush Color</p>
+		<input type="color" id="brushColor">
+	</div>
+	<div class="row">
+		<p>Background Color</p>
+		<input type="color" id="bgColor"> 
+	</div>
+	<div class="row">
+		<p>Size</p>
+		<input type="range" id="sizeRange" min="2" max="20" value="5" steps="2">
+	</div>
+	<div class="row">
+		<p>Pen Style</p>
+		<div><span>Pencil</span><input type="checkbox" id="pencil" checked="true"></div>
+		<div><span>Brush</span><input type="checkbox" id="brush"></div>
+		<div><span>Square</span><input type="checkbox" id="square"></div>
+		<div><span>Eraser</span><input type="checkbox" id="eraser"></div>
+	</div>
+	<div class="row">
+		<p><a href="#" id="saveCanvas">Save & Clear</a></p>
+		<p><a href="#" id="clearCanvas">Clear</a></p>
+	</div>
+</div>
+
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"
+    ></script>
+    
+
+    						
+      <script src="../../public/paintgame.js"></script>
+	

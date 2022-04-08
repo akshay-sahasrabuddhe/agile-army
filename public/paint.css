@@ -7,15 +7,26 @@
   font-family: sans-serif;
   overflow: hidden;
 }
+.font3 {
+  font-family: "Rubik Wet Paint", cursive;
+}
 
+.paintfont1 {
+  font-family: "Finger Paint", cursive;
+}
 #sidebar {
-  position: fixed;
   float: left;
   width: 250px;
   height: 100vh;
   background: #0a141e;
   padding: 15px;
   color: #eee;
+  overflow: auto;
+}
+.head4 {
+  font-family: "Grape Nuts", cursive;
+  font-size: 28px;
+  font-weight: bolder;
 }
 #sidebar .heading h2 {
   margin-top: -10px;
@@ -96,4 +107,8 @@ a#saveCanvas {
 
 canvas {
   float: right;
+}
+
+.colorpick-eyedropper-input-trigger {
+  display: none;
 }
