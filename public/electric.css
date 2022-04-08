@@ -1,0 +1,180 @@
+nav.electricc {
+  background-color: #221c44;
+  height: 52px;
+  font-family: "Roboto", sans-serif;
+  color: #969da2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 17px;
+  position: relative;
+  z-index: 2;
+}
+nav.electricc .rewind {
+  margin-left: 28px;
+  height: 16px;
+  cursor: pointer;
+}
+nav.electricc .play {
+  margin-left: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+nav.electricc .play-icon:hover path,
+nav.electricc .play-icon:hover rect,
+nav.electricc .rewind-icon:hover path,
+nav.electricc .rewind-icon:hover rect,
+nav.electricc .pause-icon:hover path,
+nav.electricc .pause-icon:hover rect {
+  fill: #566574;
+}
+nav.electricc .pause-icon {
+  display: none;
+}
+nav.electricc .controls {
+  display: flex;
+  align-items: center;
+}
+nav.electricc .social a {
+  font-size: 24px;
+  color: #a8b5c2;
+  margin-left: 18px;
+}
+nav.electricc .social a:hover {
+  color: #566574;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  position: relative;
+  z-index: 1;
+}
+.loading .progress {
+  transition: width 0.3s linear;
+}
+
+.notess {
+  display: flex;
+  height: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.notess .note {
+  height: 132px;
+}
+.notess .note > div {
+  height: 100%;
+  width: 32px;
+  border-radius: 16px;
+  background-color: #d8d8d8;
+  color: #541f5d;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5px 0;
+  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.16);
+}
+.notess .note:hover div {
+  background-color: #ff6545;
+  color: #fff;
+}
+.notess .note.key {
+  height: 172px;
+}
+.notess .note.key > div {
+  background-color: #ecdcca;
+}
+.notess .note.key:hover > div {
+  background-color: #ff6545;
+  color: #fff;
+}
+.notess .note:not(:first-child) > div {
+  margin-left: 8px;
+}
+.notess .note:not(:last-child) > div {
+  margin-right: 8px;
+}
+.notess .note span {
+  font-size: 0.7em;
+}
+
+.guitarr {
+  width: 96%;
+  min-width: 772px;
+  /*position: fixed;*/
+  bottom: 0;
+  right: 0;
+}
+.guitarr.visible {
+  transition: opacity 0.5s ease;
+}
+.guitarr img {
+  width: 100%;
+  display: block;
+  pointer-events: none;
+}
+.guitarr .circlee {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/switch.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 5vw;
+  height: 5vw;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 45.5%;
+  top: 88.5%;
+  cursor: pointer;
+}
+.guitarr .circlee.rock {
+  background-position: 0 100%;
+}
+.guitarr .circlee.rock:before {
+  color: #fff;
+}
+.guitarr .circlee.rock:after {
+  color: #c17ca4;
+}
+.guitarr .circlee:before,
+.guitarr .circlee:after {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  display: block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.custom-container {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/bluesman_background.svg),
+    linear-gradient(-180deg, #242150 5%, #572250 91%);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  min-width: 726px;
+}
+.custom-container * {
+  user-select: none;
+}
+
+.custom-container {
+  height: 100%;
+  min-width: 726px;
+}
