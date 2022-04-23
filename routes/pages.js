@@ -15,4 +15,11 @@ router.get('/paintgame', async (req, res) => {
     res.render('pages/paintGame');
 });
 
+
+router.get('/mazeGame', async (req, res) => {
+    res.render('pages/mazeGame');
+});
+
+
+
 module.exports = router;
