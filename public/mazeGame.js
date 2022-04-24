@@ -1,3 +1,5 @@
+
+
 function rand(max) {
     return Math.floor(Math.random() * max);
   }
@@ -46,6 +48,7 @@ function rand(max) {
   }
   
   function Maze(Width, Height) {
+    document.getElementById('footer-section').style.display = 'none';
     var mazeMap;
     var width = Width;
     var height = Height;
@@ -584,5 +587,7 @@ function rand(max) {
       document.getElementById("mazeContainer").style.opacity = "100";
     }
   }
+  
+  
   
   

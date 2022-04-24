@@ -1,28 +1,50 @@
-<section class="section guitar-game-section pt-5 mt-5 container2">
+<section class="section guitar-game-section pt-3">
 
-<div class="container  ">
-<br>
-<div class= "text-center slide-right"> <h1 > <span class="main-heading text-center guitarfont3"style='color: #212529' >The Maze Game  </h1>  </div>
-<br>
-        <div>
 
-            <h3 class="slide-right maze text-center">Mental Health benefits of Playing a Maze Game :-</h3>
-        <h3 class="slide-right maze text-center">It helps one's mental health in many ways, by providing  with a thrilling brain teaser that can enhance your visual, spatial reasoning and improves Memory Capacity. It also teaches problem solving skills, patience and persistence.</h3>
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class= "text-center slide-right"> <h1 > <span class="main-heading text-center guitarfont3"style='color: #212529' >The Maze Game  </h1>  </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
         <br>
-     <h3 class="slide-top maze text-center"> MAZE UP! </h3>
+        <div>
+            <h3 class="slide-right maze text-center">Mental Health benefits of Playing a Maze Game :-</h3>
+            <h3 class="slide-right maze text-center">It helps one's mental health in many ways, by providing  with a thrilling brain teaser that can enhance your visual, spatial reasoning and improves Memory Capacity. It also teaches problem solving skills, patience and persistence.</h3>
+            <br>
+            <h3 class="slide-top maze text-center"> MAZE UP! </h3>
+        </div> 
+        <br>
+        <br> 
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-</div> <br>
- <br> 
- </div>
 
+<div class="container">
+      
+      
 
+<div class="text-center">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Benefits of Maze Game
+</button>
+</div>
  <div id="maz">
      <div id="gradient"></div>
     <div id="page">
       <div id="Message-Container">
         <div id="message">
-          <h1 class="slide-right">Congratulations!</h1>
-          <p class="slide-right">You are done.</p>
+          <h1>Congratulations!</h1>
+          <p>You are done.</p>
           <p id="moves"></p>
           <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Cool!" />
         </div>
@@ -40,14 +62,11 @@
       </div>
       <div id="view">
         <div id="mazeContainer">
-          <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+          <canvas id="mazeCanvas" class="border" height="500" width="500"></canvas>
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
  </div>
 </section>
-
 
 <script src="../../public/mazeGame.js"></script>
